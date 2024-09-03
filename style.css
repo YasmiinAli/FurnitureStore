@@ -1,0 +1,347 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family:'Inter',sans-serif;
+}
+img {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.icons {
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    border-bottom: 1px solid black;
+    padding-bottom: 30px;
+}
+ .icon {
+    margin-top: 20px;
+    font-size: 25px;
+    cursor: pointer;
+ } 
+
+ .icon h5 {
+    margin-top:5px;
+ }
+.headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+.headline h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+.headline p {
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+
+}
+.line {
+    border: 1px solid #ff9a68;
+    width: 50px;
+    margin-top: 20px;
+}
+.price ,.rate {
+    color: gray;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px;
+}
+.card {
+    margin-bottom: 30px;
+}
+.card img  {
+    width: 100%;
+    cursor: pointer;
+}
+.btn {
+    display: flex;
+    border-radius: 5px;
+    background-color: #fbd84b;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+.btn a {
+    color: white;
+    margin-right: 5px;
+
+}
+.shipping {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 50px 0;
+    background-color: #f8f8f8;
+    border-top: 1px solid #fbd84b;
+    padding: 25px;
+    column-gap: 20px;
+}
+.shipping i {
+    color: #fbd84b;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.shipping h5 {
+    font-size: 20px;
+    font-weight: 200;
+}
+.shipping p {
+    font-size: 12px;
+    color: gray;
+}
+.free {
+    display: flex;
+    align-items: center;
+}
+.featured {
+    /* margin-top: 50px; */
+    text-align: center;
+}
+.featured h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+.featured p {
+    color: gray;
+    margin-bottom: 30px;
+}
+.collection {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 50px;
+}
+.layer {
+    background-color: rgba(71, 71, 71, 0.3);
+    height: 100vh;
+}
+.featuredone {
+    background-image: url(./images//wfh-furniture-store-featured-collection-img-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+        margin: 0 !important;
+        position: relative;
+        color: white;
+
+}
+.featuredone h2, .featuredtwo h2 {
+font-size: 20px;
+letter-spacing: 1px;
+}
+.featuredone h3,.featuredtwo h3 {
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+.featuredone .btn ,.featuredtwo .btn {
+    background-color: transparent;
+    border: 1px solid white;
+}
+.featuredone .btn:hover,.featuredtwo .btn:hover {
+    a{
+        color: black;
+    }
+    background-color: white;
+    color: black;
+    transition: all 0.9s;
+}
+
+.featuredone .bottom, .featuredtwo .bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 1%;
+
+}
+.featuredtwo {
+        background-image: url(./images//wfh-furniture-store-featured-collection-img-2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+        margin: 0 !important;
+        position: relative;
+        color: white;
+}
+.workhome h2 {
+    text-transform: uppercase;
+    color: rgb(204, 203, 203);
+    letter-spacing: 2px;
+    font-size: 14px; 
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+.workhome h4 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    margin-bottom: 30px;
+
+}
+.work {
+    background-color: #f8f8f8;
+}
+.d-grid {
+        display: grid;
+    grid-template-columns: repeat(2,1fr); 
+    column-gap: 25px;
+        padding-top: 50px;
+}
+.card .title {
+    font-size: 20px;
+    margin-bottom: 20px;
+
+
+}
+.cardbtn {
+border-bottom: 1px solid rgb(228, 226, 226);
+display: inline;
+}
+.cardbtn:hover {
+    border-bottom: 1px solid black;
+    transition: all 2s;
+}
+.cardbtn a {
+margin-bottom: 5px;
+}
+.workingspace {
+    background-image: url('./images/wfh-furniture-store-cta-img-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    
+}
+.workingspace .layer {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.workingspace h2 {
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+.workingspace h4 {
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 200;
+    margin-bottom: 40px;
+}
+.shopbtn a {
+    color: white;
+    border: 1px solid #fbd84b;
+    padding:20px 50px;
+    background-color: #fbd84b;
+    border-radius: 5px;
+}
+.shopbtn :hover {
+    background-color: #cec6a7;
+    transition: all 2s;
+    border-color: #cec6a7;
+}
+footer {
+    background-color: #f8f8f8;
+}
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding:50px 0px;
+    column-gap: 50px;
+    
+}
+.footer a , .footericons{
+        color: rgb(156, 153, 153);
+            margin-bottom: 10px;
+}
+.footericons i{
+    margin-right: 20px;
+}
+.footer h5 {
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+.footerlogo {
+    margin-bottom: 50px;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    color: rgb(167, 166, 166);
+    padding: 50px;
+    border-top: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (min-width :100px) and (max-width :600px) {
+    .icons, .cards, .footer  {
+    grid-template-columns: repeat(1,1fr);
+    text-align: center;
+    }
+    .shipping, .collection, .d-grid{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 20px;
+    }
+
+    .cards .card {
+        margin-bottom: 20px;
+    }
+  }
+     @media screen and (min-width :600px) and (max-width :800px){
+    .icons {
+    grid-template-columns: repeat(2,1fr);
+    }
+}
+    @media screen and (min-width :800px) and (max-width :1000px){
+    .cards {
+    grid-template-columns: repeat(2,1fr);
+    }
+    }
+
+     @media screen and (min-width :800px) and (max-width :1000px) {
+    .icons {
+    grid-template-columns: repeat(4,1fr);
+    }
+  }
